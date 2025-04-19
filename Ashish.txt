@@ -1,0 +1,201 @@
+Programming is simple act of providing instructions to computer to perform.
+
+Python Programming is providing instructions in python language/code so that the python interpreter software reads the instructions (the source code) and performs it.
+
+What is expression?
+It is most basic programming instruction consists of values and operator. for ex: 2+2, 2's are value and the + is operator.
+
+Data types are category of values and every value belongs to one data type. For example, integer, float, string.
+
+operators:
+
++ operator adds two integer or float values. But for the string it will be string concatenation, for ex: 'Anu' +'rag'  result: Anurag
+
+But it is not possible to use + operator for addition of int and string. For example: 'Anurag' +5
+ Result: Error TypeError: can only concatenate str (not "int") to str
+
+
+* Operator multiples two integer or float values. But for the string, it will not work between two stings or (between one float and one string )and gives error. 
+For example: "Anurag"* 'C"
+Result:   TypeError: can't multiply sequence by non-int of type 'str'
+
+However, * operator can be used between int and string. ex: 'Anu'*3
+Result: 'AnuAnuAnu'
+
+
+Variable:
+
+It is a box in computer's memory which we can save a single value. like spam= 'hello'
+
+Assignment statements are used to assign the variable and it consists of a variable and equals too sign and value. You can override the value using assignment again. 
+
+
+Variable name: A good Variable name describes the data it contains. Descriptive name help in making the program more readable. The variable names are case sensitive.
+Rules of Variable names:
+-It cam be one work with No spaces are allowed.
+-Numbers, letters, and the underscore can be used. 
+-The variable should not start with number.
+
+# is used to add comments. Sometimes # is used on the main program while testing and it is called commenting out code.
+
+Function ():
+
+Print()- print function displays the string value inside the parenthesis on the screen. It can also be used to put blank line on the screen.
+Ex- Print ('Hello world')
+Result- Hello world
+
+Input():
+
+Input function waits for the user to enter some value from the keyboard and Enter. 
+
+myName=input()
+
+
+Precedence is like bodamas in maths. It is used to determine which operator function to be used first and in following order. 
+
+
+
+
+Flow control:
+
+Boolean values: It is named after George Boole:
+Boolean data type has only two values, that is True and False. These expressions are fundamental in controlling the flow of a program, such as in conditional statements and loops.
+
+- you can use the Boolean data type that True and False as variable. However, variable can be assigned to it. Also, It is case sensitive. 
+
+
+Comparison operators:
+
+Comparison operators are relational operators which compares two values and evaluate down to single Boolean value. 
+
+== Equal to
+!= Not equal to 
+< Less than 
+> Greater than
+<= Less than equal to
+>= greater than equal to
+
+The integer or floating value will not be equal to string value. 
+
+Boolean Operators: It is similar to comparison operators, they evaluate the expressions down to a Boolean value. There are three Boolean operators. 
+-And
+-Or
+-Not
+
+And and Or considered binary operators as they always take two Boolean values or expressions. 
+
+And operator: It takes two binary values and provides with true if both the values are true. if any one of the value is not true , it provide false after evaluation. 
+
+Truth Tables for And operator is below:
+True and True 	is True
+True and False is False
+False and True is False
+False and False is False
+
+Or operator: It takes two binary values, it provide true if any one value is true and provides false if both the values are false. 
+
+Truth table:
+True or True is True
+True or False is True
+False or True is True
+False or False is False
+
+
+The not operator: Unlike the 'and', 'or' operators, the not operator needs only one Boolean value. this make is unary operator. The not operator simply evaluates opposite of the Boolean value. 
+
+not true - False
+not false - True
+
+Coditions: In Python, a condition is an expression that evaluates to either True or False. Conditions are commonly used in control flow statements like if, elif, and else to execute different blocks of code based on certain criteria.
+
+Flow control:
+Flow control often starts with the part called condition and are always followed by the block called clause. The flow control statement decides what to do based on whether the condition is true or false, and almost every flow control statement uses a condition. 
+
+If statement: It is the most common type of flow control statement. An If clause will be executed if the statement's condition is true. The clause will be skipped if the condition is false. 
+
+For 'If' statement, statement starts with 'if' and condition and colon. the next line will be indented block of code. 
+
+That is,  
+if name=='Pavan' :
+   print('Hi, Pavan')
+
+
+Else statement: An if clause can be optionally followed by else statement. If the if statement's condition is false, the flow comes to else statement. 
+if name=='Pavan' :
+   print('Hi, Pavan')
+else:
+   print('Bye, Bye')
+
+
+Elif statement:
+An elif statement is used when there is need to check for more that one condition. 
+
+if name=='Pavan' :
+   print('Hi, Pavan')
+elif name=='Selvan':
+   print('Hi, Selvan')
+
+
+
+Loops: The loops are used to repeat or execute the piece of code over and over again 
+
+While loop: The code in the while clause will be executed as long as the condition's statement is true. It will stop once the condition becomes False. 
+
+Ex: num=5
+While num<=5:
+	print("Hello")
+	num=num+1
+
+Break statement:
+Break statement is used in program execution to exit out of the while loop's clause early. When the execution reaches break statement, it exits the while's clause. 
+
+ex: While True:
+	print('enter the name')
+	name=input()
+	if name== 'your name':
+		break
+print('Thank you')
+
+
+Continue statement: Continue statement is used inside a loop and when a program execution reaches the continue statement, the program execution immediately jumps to start of the loop and reevaluate the loop.
+
+ex: while True:
+    	print('Who are you?')
+    	name = input()
+ 	if name != 'Joe':
+ 	 continue
+   	print('Hello, Joe. What is the password? (It is a fish.)')
+ 	password = input()
+    	if password == 'swordfish':
+ 		 break
+print('Access granted.') 
+
+
+For loop and range function:
+The while loop keeps looping until the condition is false. The for loop is used to execute certain number of loops using range function. We can use the continue and break in the 'for' loop function as well.
+
+ex:
+print('My name is')
+for i in range(5):
+	print('Pavan' '('+str(i)+')')
+
+Result: My name is Pavan (0)
+My name is Pavan (1)
+My name is Pavan (2)
+My name is Pavan (3)
+My name is Pavan (4)
+
+Range(): The range function will include the starting, stopping and stepping arguments to the range function.
+
+
+
+the three blocks in program are:
+
+Initialization Block: Sets up the initial value.
+
+Conditional Block: Handles the decision-making process.
+
+Final Print Block: Executes the final print statement.
+
+These blocks together form the structure of the program.
+

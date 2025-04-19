@@ -1,0 +1,111 @@
+Linux:
+
+Working with the shell:
+
+it is command line interface will enable to effectively work on Linux laptop.
+Graphical view might seem more appealing but it can be quite limited in terms of functionality.  
+
+Linux Shell:
+
+Linux Shell is a program that allows text based interaction between the user and operating system. 
+This action is taken place by typing command into the interface and getting the output at same way.
+
+Home Directory '~': 
+Home Directory is unique for the user. Home Directory is used to store personal data in the form of files and directories which will be unique to all the users. Where data can be retrieved, deleted or saved. 
+
+Codes used:
+echo 
+echo is used to print the line of text. It needs argument which is the text that needs to be printed.
+
+uptime
+uptime doesn't need argument and it prints the system uptime information since the last reboot. 
+
+
+Options: 
+Commands can have options to modify in predetermined way. It is also referred as switch or flag. it is usually single letter with hypen -. 
+
+
+Command types:
+1. internal/ Built in commands. ex: pwd,cd,echo, etc
+2. External commands. ex: date,uptime, cp,mv, etc
+
+External commands are binary program or scripts usually located in distinct file in the system. it comes pre-installed with distribution package management or can be created by the user. 
+
+Type command can be used to determine the command type. 
+
+
+
+Basic Linux commands:
+
+pwd (present working directory) can be used to check which directory is currently being worked on.
+
+ls (list contents)
+it is used to check the contents of the directory. If nothing is printed, that means the directory is empty. 
+
+mkdir (make a new directory)
+It is used to create a new directory. we can create one at a time or multiple directories by providing multiple arguments.
+
+cd (change directory)
+The cd along with the argument is used to change the directory to required directory. 
+
+Mkdir -p argument/argument:
+It is used to create directory inside directory directly without having to create a parent directory. It create parent directory and then the directory needed.
+ex: mkdir -p India/Mumbai
+
+cd .. or cd or cd /home/user:
+It is used to go up the directory, it can be used to go to home directory.
+
+Absolute path and Relative path:
+
+Absolute path is where complete path from the root directory is mentioned. example: cd /home/bob/asia
+
+Relative path is the path in relation to present working directory. 
+cd aisa
+
+Note: to copy or delete a directory using cp or rm, -r (recursive opteration) is used in the option.
+
+Cat (concatenate)
+To read the contents of the file.  
+
+cat (redirect)
+cat > argument
+This is used to replace the value in the file. cntrl d will be used to exit out of the promt
+
+pushed/popd:
+
+
+touch (create a new file)
+ it is used to create a new file
+
+Pagers: used to see the data in a file using 'more' and 'less' command.
+
+more new_file.txt
+it is used to see the data in the new file. 
+[space]- scrolls the display, one screenful of data at a time
+[Enter]- scrolls the display one line
+[b]- scrolls the display backwards one screenful data
+[/]- search text
+q- to quit
+
+less
+[up arrow]- scrolls up the display one line
+[down arrow]- scrolls down the display one line
+[/]- search the text
+
+
+long list: this command provides more details about the files and directories like access. etc. 
+ls -l
+
+ls -a: it is used to list all the files including the hidden files. 
+we will notes two files represented by . and .. 
+single dot refers to currently working directory
+double dot refers to the directory in the file system which is above or before current directory. 
+
+ls -lt (long list files  in order created)
+
+ls -ltr (long list files in reverse order created)
+
+
+
+
+
